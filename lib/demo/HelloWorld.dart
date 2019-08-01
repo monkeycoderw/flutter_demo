@@ -13,28 +13,18 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: new Text(
-              'Hello Nick',
-              style: TextStyle(
-                fontSize: 40.0
-              ),
+            child: new Image.network(
+              "http://img.kanzhun.com/images/logo/20161009/cad3ad6e787dc8dd2eaa0c8b9adc3c4e.jpg",
+              scale: 0.8,
+              fit: BoxFit.fitWidth,
+              colorBlendMode: BlendMode.colorBurn,
+              repeat: ImageRepeat.repeatY,
             ),
-            alignment: Alignment.topCenter,
-            width: 300,
-            height: 400,
-//            color: Colors.grey,
-            padding: const EdgeInsets.fromLTRB(10,30,0,0),
-            margin:const EdgeInsets.all(5.0),
-            decoration: new BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [
-                  Colors.lightBlue,
-                  Colors.greenAccent,
-                  Colors.purple
-                ]
-              ),
-            ),
-          )
+              width: 400,
+              height: 600,
+              color: Colors.lightBlue,
+
+          ),
         )
       )
     );
